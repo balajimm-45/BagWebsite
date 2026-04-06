@@ -1,0 +1,281 @@
+:root{
+    --main-color:#481d1d;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.tote{
+    width: 230px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav1{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.navA{  
+    color: var(--main-color);
+    text-decoration: none;
+    font-size:18px;
+    align-items: center;
+}
+.navA i{
+    font-size: 25px;
+}
+.navA:hover{
+    text-decoration: underline;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+}
+.pa{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    color: var(--main-color);
+}
+.rightdiv p{
+    margin-top: 20px;
+}
+.addTo{
+    display: flex;
+    width: 80px;
+    height: 30px;
+    border:1px solid var(--main-color);
+    margin-top: 20px;
+}
+.plus{
+    font-size: 20px;
+    width: 20px;
+    transform: translateX(-25px);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.input{
+    padding: 5px;
+    width: 25px;
+    transform: translateX(25px);
+}
+.minus{
+    font-size: 20px;
+    width: 20px;
+    transform: translateX(13px);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.add{
+    width: 400px;
+    height: 35px;
+    background-color: #1552c2;
+    border: none;
+    outline: none;
+}
+.bagcart{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin-top: 20px;
+    gap: 20px;
+}
+.add a{
+    text-decoration: none;
+    color: white;
+}
+.add a:hover{
+    text-decoration: underline;
+}
+.buy{
+    width: 400px;
+    height: 35px;
+    background-color: #481d1d;
+    border: none;
+    outline: none;
+}
+.buy a{
+    text-decoration: none;
+    color: white;
+}
+.buy a:hover{
+    text-decoration: underline;
+}
+.accordion {
+  margin-top: 20px;  
+  width: 400px;
+  font-family: Arial;
+}
+
+.item {
+  border-bottom: 1px solid #ccc;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+  font-size: 12px;
+}
+.content ul{
+    transform: translateX(40px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.item.active .content {
+  max-height: 200px;
+  padding: 15px;
+}
+
+.icon {
+  font-size: 20px;
+}
+footer{
+    display: flex;
+    padding: 30px;
+}
+.footerleft{
+    width: 50%;
+    height: 100vh;
+}
+.footerleft img{
+    width: 250px;
+}
+.footerright{
+    width: 80%;
+}
+.ani{
+    transition: 0.4s ;
+    animation: ani linear;
+    animation-timeline: view();
+    animation-range: 1% 50%;
+
+}
+@keyframes ani {
+    from{
+        transform:rotate(20deg);
+        opacity: 0.5;
+    }
+    to{
+        transform:rotateY(0);
+        opacity: 1;
+    }
+    
+}
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--main-color);
+}
+.links{
+    margin-top: 70px;
+}
+.links a{
+    font-size: 18px;
+    color: var(--main-color);
+}
+.footerright .social{
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 70px;
+    gap: 20px;
+}
+.social a{
+    height: max-content;
+    font-size: 30px;
+    color: black;
+}
+.footer2{
+    padding: 30px;
+    color: var(--main-color);
+    height: 60vh;
+    margin-top: 30px;
+}
+.ch1{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    row-gap: 20px;
+    transform: translateY(-30px);
+}
+.ch2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+}
+.mail{
+    width: 500px;
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+.mail:focus{
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
+.mailbox{
+    width:max-content ;
+    transform: translateX(-500px);
+    font-size: 15px;
+}
+.mail:focus+.mailbox{
+    transform: translateY(-20px) translateX(-500px);
+}
+.mailLink{
+    display: flex;
+    background-color: #481d1d;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    height: 20px;
+    width: 210px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ch3{
+    margin-top: 10px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 20px;
+}
+.check{
+    width: 16px;
+    height: 16px;
+    
+}
+.end{
+    margin-top: 40px;
+}
